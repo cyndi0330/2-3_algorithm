@@ -10,7 +10,7 @@ def bubble(A):
 
 
 def insertion(A):
-    for j in (2, A.length):
+    for j in (2, len(A)):
         key = A[j]
         i = j-1
         while i > 0 and A[i] > key:
@@ -22,7 +22,7 @@ def insertion(A):
 
 
 def selection(A):
-    for i in (1,A.length-1):
+    for i in (1,len(A)-1):
         key = i
         for j in (i+1, A.length):
             if A[key] > A[j]:
